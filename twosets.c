@@ -49,7 +49,7 @@ int fun(int a_count, int* a, int b_count, int* b) {
         
     for(int i = lcm; i <= gcd_value; i = i+lcm)
     {
-        if(i % lcm == 0 && gcd_value % i == 0)
+        if(gcd_value % i == 0)
             count++;
     }
     return count;
